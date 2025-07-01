@@ -1,9 +1,9 @@
 A lightweight and straightforward Customer Relationship Management (CRM) system built with PHP.
 
 REQUIREMENTS
-PHP 8.2 or higher
-MySQL
-Apache Web Server
+PHP 8.2 or higher, 
+MySQL, 
+Apache Web Server, 
 Composer
 
 There is a config.php for storing database credentials and mail settings for sending emails. 
@@ -13,6 +13,8 @@ Set Up the Web Server
 Make sure the project folder is accessible via your local server.
 
 Example for Apache: point a VirtualHost to the project’s public directory.
+
+If you use VSCode running php -S localhost:8888 -t public will work just fine. 
 
 RUN composer install
 
