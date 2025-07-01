@@ -1,0 +1,110 @@
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.input-group-text {
+  background-color: #fff;
+  border-right: 0;
+}
+.form-control {
+  border-left: 0;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.hover-underline:hover {
+  text-decoration: underline !important;
+}
+
+.gap-x-1 {
+  column-gap: 1em;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.logout-btn {
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  padding: 0;
+}
+.text-red-500 {
+  color: oklch(63.7% 0.237 25.331);
+}
+
+@media (min-width: 768px) {
+    #sidebar {
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 240px;
+        height: 100%;
+        transform: none !important;
+        visibility: visible !important;
+        background-color: #121212;
+        z-index: 1020;
+    }
+
+    #main-content {
+        margin-left: 240px;
+    }
+}
+
+.card i.bi {
+    opacity: 0.7;
+}
+
+.card.bg-gradient {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flash-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1055;
+  min-width: 300px;
+  max-width: 400px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.flash-progress {
+  height: 4px;
+  margin-top: 10px;
+  background-color: rgba(255,255,255,0.3);
+  position: relative;
+}
+
+.flash-progress .progress-bar {
+  width: 100%;
+  transition: width linear;
+}
