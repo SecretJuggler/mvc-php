@@ -61,25 +61,6 @@ class Router
     public function route($uri, $method) 
     {
         foreach ($this->routes as $route) {
-            // $uri = rtrim($uri, '/');
-
-            // if ($route['method'] === 'resources' && $route['uri'] === substr($uri, 0, strrpos($uri, '/'))) {
-            //     [$controllerClass] = $route['controller'];  
-
-            //     if (class_exists($controllerClass)) {
-            //         $controllerInstance = new $controllerClass();
-
-            //         $controllerMethod = $this->getResourceMethod($method, $uri);
-            //         if (method_exists($controllerInstance, $controllerMethod)) {
-            //             $controllerInstance->$controllerMethod();
-            //             return;
-            //         } else {
-            //             throw new Exception("Method {$controllerMethod} not found in controller {$controllerClass}");
-            //         }
-            //     } else {
-            //         throw new Exception("Controller class {$controllerClass} not found");
-            //     }
-            // }
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
                 Middleware::resolve($route['middleware']);
             
