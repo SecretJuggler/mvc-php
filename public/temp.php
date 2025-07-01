@@ -3,6 +3,9 @@
 if (isset($_GET['delete'])) {
     if (unlink(__FILE__)) {
         echo "setup.php deleted. <br />";
+        echo "Email: admin@admin.com <br />";
+        echo "Password: password <br />";
+        echo "<a href='/'>Log in here</a>";
     } else {
         echo "Could not delete setup.php. Please delete manually. <br />";
     }
